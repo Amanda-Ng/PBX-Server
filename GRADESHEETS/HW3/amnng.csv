@@ -1,0 +1,88 @@
+Graded Commit:0e8b4f9a97be6080e0fbe75341c74a81a2a21f48
+
+TEST NAME, POINTS,OUT OF
+basecode_suite/free_coalesce,1,1,
+basecode_suite/free_coalesce_alt,0,1,The test crashed.: None
+basecode_suite/free_no_coalesce,1,1,
+basecode_suite/free_no_coalesce_alt,0,1,The test crashed.: None
+basecode_suite/freelist,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:174: Wrong number of free blocks of size 64 (exp=1, found=0)"
+basecode_suite/freelist_alt,0,1,The test crashed.: None
+basecode_suite/malloc_an_int,1,1,
+basecode_suite/malloc_an_int_alt,1,1,
+basecode_suite/malloc_four_pages,1,1,
+basecode_suite/malloc_four_pages_alt,1,1,
+basecode_suite/malloc_too_large,1,1,
+basecode_suite/malloc_too_large_alt,1,1,
+basecode_suite/realloc_larger_block,1,1,
+basecode_suite/realloc_larger_block_alt,0,1,The test crashed.: None
+basecode_suite/realloc_smaller_block_free_block,1,1,
+basecode_suite/realloc_smaller_block_free_block_alt,0,1,The test crashed.: None
+basecode_suite/realloc_smaller_block_splinter,1,1,
+basecode_suite/realloc_smaller_block_splinter_alt,0,1,The test crashed.: None
+illegal_pointer_suite/free_block_too_small,1,1,
+illegal_pointer_suite/free_block_too_small_alt,1,1,
+illegal_pointer_suite/free_null,1,1,
+illegal_pointer_suite/free_null_alt,1,1,
+illegal_pointer_suite/free_prev_alloc,0,1,1 assertion(s) failed.: tests/grading_tests_p2.c:206: SIGABRT should have been received
+illegal_pointer_suite/free_prev_alloc_alt,1,1,
+illegal_pointer_suite/free_unallocated,1,1,
+illegal_pointer_suite/free_unallocated_alt,1,1,
+initialization_suite/initialization,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x58bdb19eb558. Should be: 0
+initialization_suite/initialization_alt,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:77: Block size is invalid for 0x637fa064d5f8. Got: 0
+lifo_suite/malloc_free_lifo,1,1,
+lifo_suite/malloc_free_lifo_alt,0,1,The test crashed.: None
+malloc_free_suite/coalesce_both,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x6385e5485918 has wrong block_size (got 544, expected 512)"
+malloc_free_suite/coalesce_both_alt,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x603670453928 has wrong block_size (got 544, expected 512)"
+malloc_free_suite/coalesce_lower,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x5b57b3f90918 has wrong block_size (got 544, expected 512)"
+malloc_free_suite/coalesce_lower_alt,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x57517e30a9e8 has wrong block_size (got 544, expected 512)"
+malloc_free_suite/coalesce_upper,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x635432476918 has wrong block_size (got 544, expected 512)"
+malloc_free_suite/coalesce_upper_alt,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x5d2646cc09e8 has wrong block_size (got 544, expected 512)"
+malloc_free_suite/first_block,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x582774821558. Should be: 0
+malloc_free_suite/first_block_alt,0,1,The test crashed.: None
+malloc_free_suite/last_block,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x635ff6596638 has wrong block_size (got 1792, expected 1760)"
+malloc_free_suite/last_block_alt,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x5a3949617648 has wrong block_size (got 1792, expected 1760)"
+malloc_free_suite/no_coalesce,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x5aa8efaad558. Should be: 0
+malloc_free_suite/no_coalesce_alt,0,1,The test crashed.: None
+memalign_suite/test_1a,1,1,
+memalign_suite/test_1a_alt,1,1,
+memalign_suite/test_1b,1,1,
+memalign_suite/test_1b_alt,1,1,
+memalign_suite/test_1c,1,1,
+memalign_suite/test_1c_alt,1,1,
+memalign_suite/test_2,1,1,
+memalign_suite/test_2_alt,0,1,The test timed out.: None
+memalign_suite/test_3,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x5b77b1d0f4b8. Should be: 0
+memalign_suite/test_3_alt,0,1,The test timed out.: None
+realloc_suite/realloc_larger,1,1,
+realloc_suite/realloc_larger_alt,0,1,The test crashed.: None
+realloc_suite/realloc_preserves_payload,1,1,
+realloc_suite/realloc_preserves_payload_alt,0,1,The test crashed.: None
+realloc_suite/realloc_same,1,1,
+realloc_suite/realloc_same_alt,0,1,The test crashed.: None
+realloc_suite/realloc_size_0,1,1,
+realloc_suite/realloc_size_0_alt,0,1,The test crashed.: None
+realloc_suite/realloc_smaller,1,1,
+realloc_suite/realloc_smaller_alt,0,1,The test crashed.: None
+realloc_suite/realloc_splinter,1,1,
+realloc_suite/realloc_splinter_alt,0,1,The test crashed.: None
+single_malloc_suite/exactly_one_page,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x5a4c63285558 has wrong block_size (got 2016, expected 1984)"
+single_malloc_suite/exactly_one_page_alt,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x62af6dd305c8 has wrong block_size (got 2016, expected 1984)"
+single_malloc_suite/malloc_1,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x5ff8db6534b8. Should be: 0
+single_malloc_suite/malloc_16,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x647c47f29558. Should be: 0
+single_malloc_suite/malloc_16_alt,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:77: Block size is invalid for 0x622ed0625538. Got: 0
+single_malloc_suite/malloc_1_alt,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:77: Block size is invalid for 0x5a00d8a15538. Got: 0
+single_malloc_suite/malloc_32,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x5c3a6180f558. Should be: 0
+single_malloc_suite/malloc_32_alt,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:77: Block size is invalid for 0x5903ec7d9538. Got: 0
+single_malloc_suite/malloc_max,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x59c638272558. Should be: 0
+single_malloc_suite/malloc_max_alt,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:77: Block size is invalid for 0x62cd62373538. Got: 0
+single_malloc_suite/more_than_one_page,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x5808103e8618 has wrong block_size (got 2048, expected 2016)"
+single_malloc_suite/more_than_one_page_alt,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:130: Block 0x5d1d6bf795c8 has wrong block_size (got 2048, expected 2016)"
+single_malloc_suite/splinter,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x5f536277c4b8. Should be: 0
+single_malloc_suite/splinter_alt,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:77: Block size is invalid for 0x60e4279e7538. Got: 0
+single_malloc_suite/three_pages,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x5e21fc485558. Should be: 0
+single_malloc_suite/three_pages_alt,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:77: Block size is invalid for 0x621a06495538. Got: 0
+stress_suite/malloc_to_exhaustion,1,1,
+stress_suite/malloc_to_exhaustion_alt,1,1,
+stress_suite/stress_test,0,1,1 assertion(s) failed.: tests/__grading_helpers.c:83: Prev allocated bit is not correctly set for 0x5efa9666b558. Should be: 0
+stress_suite/stress_test_alt,0,1,The test crashed.: None
+total,34,84
