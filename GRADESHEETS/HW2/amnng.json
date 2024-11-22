@@ -1,0 +1,160 @@
+{
+  "amnng": {
+    "input_file": "/home/gene/grader-s19/tests/rsrc/gettysburg.txt",
+    "compress_command": "./bin/huff -c -b 1024 < /home/gene/grader-s19/tests/rsrc/gettysburg.txt > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out",
+    "decompress_command": "/home/gene/grader-s19/hw2/dev_repo/basecode/hw2/tests/ref_huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out",
+    "hard_compress_times": [
+      0.014442920684814453,
+      0.009482622146606445,
+      0.005906105041503906,
+      0.006009101867675781,
+      0.014339923858642578
+    ],
+    "average_compress_time": 0.010036134719848632,
+    "hard_decompress_times": [
+      0.013952255249023438,
+      0.008112668991088867,
+      0.006227970123291016,
+      0.0060939788818359375,
+      0.017769813537597656
+    ],
+    "average_decompress_time": 0.010431337356567382,
+    "status": "pass",
+    "compress_errors": [],
+    "decompress_errors": []
+  }
+}
+{}
+{
+  "amnng": {
+    "input_file": "/home/gene/grader-s19/tests/rsrc/large_ascii_file.txt",
+    "compress_command": "./bin/huff -c -b 1024 < /home/gene/grader-s19/tests/rsrc/large_ascii_file.txt > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out",
+    "decompress_command": "/home/gene/grader-s19/hw2/dev_repo/basecode/hw2/tests/ref_huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out",
+    "hard_compress_times": [
+      7.640658140182495,
+      7.645437955856323,
+      7.676393985748291,
+      7.647650241851807,
+      7.702807188034058
+    ],
+    "average_compress_time": 7.662589502334595,
+    "hard_decompress_times": [
+      0.007412433624267578,
+      0.0071947574615478516,
+      0.007332324981689453,
+      0.0071027278900146484,
+      0.007332801818847656
+    ],
+    "average_decompress_time": 0.007275009155273437,
+    "status": "fail (content mismatch) (decompress errors)",
+    "compress_errors": [],
+    "decompress_errors": [
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:464 \u001b[0mMore than one node left on stack\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:464 \u001b[0mMore than one node left on stack\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:464 \u001b[0mMore than one node left on stack\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:464 \u001b[0mMore than one node left on stack\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:464 \u001b[0mMore than one node left on stack\n"
+    ]
+  }
+}
+{}
+{
+  "amnng": {
+    "input_file": "/home/gene/grader-s19/tests/rsrc/large_binary_file.bin",
+    "compress_command": "./bin/huff -c -b 1024 < /home/gene/grader-s19/tests/rsrc/large_binary_file.bin > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out",
+    "decompress_command": "/home/gene/grader-s19/hw2/dev_repo/basecode/hw2/tests/ref_huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out",
+    "hard_compress_times": [
+      15.066083192825317,
+      15.146131753921509,
+      15.064416885375977,
+      15.063853740692139,
+      15.224068880081177
+    ],
+    "average_compress_time": 15.112910890579224,
+    "hard_decompress_times": [
+      0.008944272994995117,
+      0.008685827255249023,
+      0.008427619934082031,
+      0.008498907089233398,
+      0.008905172348022461
+    ],
+    "average_decompress_time": 0.008692359924316407,
+    "status": "fail (content mismatch) (decompress errors)",
+    "compress_errors": [],
+    "decompress_errors": [
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:391 \u001b[0mOne-node Huffman tree is not allowed\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:391 \u001b[0mOne-node Huffman tree is not allowed\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:391 \u001b[0mOne-node Huffman tree is not allowed\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:391 \u001b[0mOne-node Huffman tree is not allowed\n",
+      "Decompression returned nonzero exit status 1: \u001b[1;35mDEBUG: src/huff.c:read_huffman_tree:391 \u001b[0mOne-node Huffman tree is not allowed\n"
+    ]
+  }
+}
+{}
+{}
+{
+  "amnng": {
+    "input_file": "/home/gene/grader-s19/tests/rsrc/large_ascii_file.txt",
+    "compress_command": "/home/gene/grader-s19/hw2/dev_repo/basecode/hw2/tests/ref_huff -c -b 1024 < /home/gene/grader-s19/tests/rsrc/large_ascii_file.txt > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out",
+    "decompress_command": "./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out",
+    "hard_compress_times": [
+      5.749104022979736,
+      5.842526435852051,
+      5.889954566955566,
+      5.775933265686035,
+      5.792032718658447
+    ],
+    "average_compress_time": 5.8099102020263675,
+    "hard_decompress_times": [
+      0.2578868865966797,
+      0.25140380859375,
+      0.25392913818359375,
+      0.24009943008422852,
+      0.25290989875793457
+    ],
+    "average_decompress_time": 0.2512458324432373,
+    "status": "fail (content mismatch) (decompress errors)",
+    "compress_errors": [],
+    "decompress_errors": [
+      "Decompression returned nonzero exit status 139: bash: line 1: 534633 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 534648 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 534663 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 534679 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 534693 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n"
+    ]
+  }
+}
+{}
+{
+  "amnng": {
+    "input_file": "/home/gene/grader-s19/tests/rsrc/large_binary_file.bin",
+    "compress_command": "/home/gene/grader-s19/hw2/dev_repo/basecode/hw2/tests/ref_huff -c -b 1024 < /home/gene/grader-s19/tests/rsrc/large_binary_file.bin > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out",
+    "decompress_command": "./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out",
+    "hard_compress_times": [
+      9.043802261352539,
+      8.97692060470581,
+      8.99286961555481,
+      8.990499019622803,
+      9.022635221481323
+    ],
+    "average_compress_time": 9.005345344543457,
+    "hard_decompress_times": [
+      0.32300782203674316,
+      0.23630905151367188,
+      0.2473011016845703,
+      0.2402958869934082,
+      0.23526430130004883
+    ],
+    "average_decompress_time": 0.2564356327056885,
+    "status": "fail (content mismatch) (decompress errors)",
+    "compress_errors": [],
+    "decompress_errors": [
+      "Decompression returned nonzero exit status 139: bash: line 1: 522262 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 522277 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 522291 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 522306 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n",
+      "Decompression returned nonzero exit status 139: bash: line 1: 522323 Segmentation fault      (core dumped) ./bin/huff -d < /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_compressed.out > /home/gene/grader-s19/hw2/repos/amnng/hw2/tests/rsrc/hard_case_decompressed.out\n"
+    ]
+  }
+}
+{}
