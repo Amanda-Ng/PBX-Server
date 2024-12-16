@@ -1,0 +1,36 @@
+Graded Commit:1ff99d6b50c788bb9df1947dcf0f5385ce29e1be
+
+TEST NAME, POINTS,OUT OF
+TU_suite/tu_chat_basic,1,1,
+TU_suite/tu_chat_invalid,1,1,
+TU_suite/tu_dial_basic,1,1,
+TU_suite/tu_dial_deadlock,1,1,
+TU_suite/tu_dial_off_hook,1,1,
+TU_suite/tu_extension,1,1,
+TU_suite/tu_fileno,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:47: tu_fileno, Failed to get expected value. Got: -1 | Expected: 9."
+TU_suite/tu_init,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:57: tu_init, Buffer is NULL."
+TU_suite/tu_pickup_basic,1,1,
+TU_suite/tu_pickup_repeat,0,1,"1 assertion(s) failed.: tests/__grading_helpers.c:47: tu_pickup second time, Failed to get expected value. Got: -1 | Expected: 0."
+TU_suite/tu_ref_stress,1,1,
+TU_suite/tu_self_dial,1,1,
+blackbox_suite/connect_disconnect2_test,1,1,
+blackbox_suite/connect_disconnect2_valgrind_test,1,1,
+blackbox_suite/connect_disconnect_many_test,1,1,
+blackbox_suite/connect_disconnect_many_valgrind_test,1,1,
+blackbox_suite/connect_disconnect_test,1,1,
+blackbox_suite/connect_disconnect_valgrind_test,0,1,1 assertion(s) failed.: tests/blackbox_tests.c:130: Valgrind reported errors
+blackbox_suite/dial_answer_test,1,1,
+blackbox_suite/dial_bad_test,1,1,
+blackbox_suite/dial_disconnect_test,1,1,
+blackbox_suite/dial_good_test,1,1,
+blackbox_suite/dial_self_test,1,1,
+blackbox_suite/exercise_test,1,1,
+blackbox_suite/exercise_valgrind_test,1,1,
+blackbox_suite/open_connection_test,1,1,
+blackbox_suite/open_connection_valgrind_test,0,1,1 assertion(s) failed.: tests/blackbox_tests.c:130: Valgrind reported errors
+blackbox_suite/pickup_hangup2_test,1,1,
+blackbox_suite/pickup_hangup_test,1,1,
+pbx_suite/dial_two_threads,1,1,
+pbx_suite/many_threads_random_reg_unreg_premature,0,1,The test timed out.: None
+stress_suite/stress_test,1,1,
+total,26,32
